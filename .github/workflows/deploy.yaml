@@ -2,8 +2,11 @@ name: CDK Deploy
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch: # Allows manual trigger
+
 permissions:
   id-token: write # This is required for requesting the JWT
   contents: read  # This is required for actions/checkout
@@ -32,8 +35,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
-          aws-region: ap-south-1 # Change this to your preferred region
+          aws-region: ap-south-1 # Changed from us-east-1 to match bootstrapping
 
       - name: CDK Deploy
         run: cdk deploy EC2Stack-Local --require-approval never
-
