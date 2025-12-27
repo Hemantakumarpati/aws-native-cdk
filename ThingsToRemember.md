@@ -1,4 +1,4 @@
-# AWS CDK Interview Preparation Guide
+# AWS CDK Guide
 
 This guide contains common and advanced interview questions you might face during a customer or technical interview focused on AWS CDK.
 
