@@ -8,7 +8,7 @@ In this task, I have set up a new AWS CDK project in Python to create an EC2 ins
 - **Documentation**: 
     - [README.md](file:///c:/Users/heman/learning/aws/aws-native-cdk/README.md): Setup and deployment instructions.
     - [ec2stack.md](file:///c:/Users/heman/learning/aws/aws-native-cdk/ec2stack.md): A line-by-line explanation of the CDK code.
-    - [interview.md](file:///c:/Users/heman/learning/aws/aws-native-cdk/interview.md): A comprehensive list of CDK interview questions and answers.
+    - [faq.md](file:///c:/Users/heman/learning/aws/aws-native-cdk/interview.md): A comprehensive list of CDK faq questions and answers.
     - [cicd_comparison.md](file:///c:/Users/heman/learning/aws/aws-native-cdk/cicd_comparison.md): Analysis of CI/CD tools.
     - [pipeline_stack.py](file:///c:/Users/heman/learning/aws/aws-native-cdk/pipeline_stack.py): AWS CodePipeline implementation.
 
