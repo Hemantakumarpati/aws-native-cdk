@@ -1,7 +1,9 @@
 name: CDK Bootstrap
 
 on:
-  workflow_dispatch: # Allows you to run this manually from the Actions tab
+  push:
+    branches:
+      - main
 
 jobs:
   bootstrap:
