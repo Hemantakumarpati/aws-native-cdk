@@ -32,7 +32,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
-          aws-region: us-east-1 # Change this to your preferred region
+          aws-region: ap-south-1 # Change this to your preferred region
 
       - name: CDK Deploy
         run: cdk deploy EC2Stack-Local --require-approval never
