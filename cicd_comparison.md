@@ -2,7 +2,7 @@
 
 Choosing the right CI/CD tool for AWS CDK depends on your team's workflow, security requirements, and where your code lives.
 
-## 🚀 Comparison at a Glance
+## Comparison at a Glance
 
 | Feature | GitHub Actions | AWS CodePipeline (via CDK Pipelines) |
 | :--- | :--- | :--- |
@@ -31,7 +31,7 @@ Choosing the right CI/CD tool for AWS CDK depends on your team's workflow, secur
 
 ---
 
-## 🏗️ AWS CodePipeline (via CDK Pipelines)
+## AWS CodePipeline (via CDK Pipelines)
 
 **Best for:** Enterprise environments and teams who want to use **CDK Pipelines** (Self-mutating pipelines).
 
@@ -47,7 +47,7 @@ Choosing the right CI/CD tool for AWS CDK depends on your team's workflow, secur
 
 ---
 
-## 🛠️ The Roles of CodeBuild vs. CodeDeploy in CDK
+## The Roles of CodeBuild vs. CodeDeploy in CDK
 
 When using AWS-native tools, it's important to understand where CDK fits.
 
@@ -67,7 +67,7 @@ CodePipeline is the "glue" that triggers CodeBuild when you push code to your re
 
 ---
 
-## 🏗️ The "Legacy" vs "Modern" CDK CI/CD Setup
+## The "Legacy" vs "Modern" CDK CI/CD Setup
 
 | Workflow Component | Modern (CDK Pipelines) | Standard Native |
 | :--- | :--- | :--- |
@@ -78,7 +78,7 @@ CodePipeline is the "glue" that triggers CodeBuild when you push code to your re
 
 ---
 
-## 🏆 Recommendation for Your Setup
+## Recommendation for Your Setup
 For the EC2 instance we built:
 1. **Infrastructure**: Use **CodeBuild** to run `cdk deploy`. This will create the EC2 via CloudFormation.
 2. **Application**: Since we used `User Data` for the simple Apache setup, you don't even need CodeDeploy yet. 
