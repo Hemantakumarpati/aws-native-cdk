@@ -34,4 +34,4 @@ jobs:
           aws-region: ap-south-1
 
       - name: CDK Destroy
-        run: cdk destroy EC2Stack-Local --force
+        run: cdk destroy CDKToolkit --force
